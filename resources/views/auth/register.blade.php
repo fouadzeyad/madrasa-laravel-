@@ -80,6 +80,10 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+
+                                <button type="submit" class="btn btn-primary">
+                                    <a href="{{ url('/auth/redirect/facebook') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Register via Facebook</a>
+                                </button>
                             </div>
                         </div>
                     </form>

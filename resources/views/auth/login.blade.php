@@ -25,16 +25,28 @@
 {{--                            </div>--}}
 {{--                        </div>--}}
 
+{{--                        <div class="form-group row">--}}
+{{--                            <label for="mobile" class="col-md-4 col-form-label text-md-right">mobile</label>--}}
+
+{{--                            <div class="col-md-6">--}}
+{{--                                <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile" autofocus>--}}
+
+{{--                                @error('mobile')--}}
+{{--                                <span class="invalid-feedback" role="alert">--}}
+{{--                                        <strong>{{ $message }}</strong>--}}
+{{--                                    </span>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
                         <div class="form-group row">
-                            <label for="mobile" class="col-md-4 col-form-label text-md-right">mobile</label>
-
+                            <label for="username" class="col-md-4 col-form-label text-md-right">Mobile Or Email</label>
                             <div class="col-md-6">
-                                <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile" autofocus>
-
-                                @error('mobile')
+                                <input id="username" type="username" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required  autofocus>
+                                @error('username')
                                 <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                    <strong>{{ $message }}</strong>
+                                </span>
                                 @enderror
                             </div>
                         </div>

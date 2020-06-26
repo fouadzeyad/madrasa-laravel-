@@ -34,4 +34,12 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => '3567054956641147',
+        'client_secret' => 'c26c399015d834cf74e0c3ea7819446e',
+        'redirect' => 'https://www.facebook.com/fouad.altali/callback/facebook',
+    ],
+
+
+
 ];

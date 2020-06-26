@@ -23,3 +23,7 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
+
+
